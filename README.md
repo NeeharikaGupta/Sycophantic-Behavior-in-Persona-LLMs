@@ -120,7 +120,7 @@ The prompts and responses for this part of our analysis can be found in the dire
 ### 📝 Model Prompt Creation
 Each question-answering dataset requires a different type of response &ndash; numeric for GSM8K, A/B for QuaRel and True/False for StrategyQA. Further, upon exploring prompting strategies, we found that different prompts work better for Gemma as compared to Llama and Phi. Thus, we created 6 different kinds of prompts for generating our baseline responses.
 
-The notebook [`model_prompt_creator.ipynb`](model_prompt_creator.ipynb) constructs prompts using persona-task pairs by combining each persona in [`personas_10.xlsx`] with each problem in [`gsm8k_20.xlsx`](gsm8k_20.xlsx), [`quarel_20.xlsx`](quarel_20.xlsx) and [`strategyqa_20.xlsx`](strategyqa_20.xlsx).
+The notebook [`model_prompt_creator.ipynb`](model_prompt_creator.ipynb) constructs prompts using persona-task pairs by combining each persona in [`personas_10.xlsx`](personas_10.xlsx) with each problem in [`gsm8k_20.xlsx`](gsm8k_20.xlsx), [`quarel_20.xlsx`](quarel_20.xlsx) and [`strategyqa_20.xlsx`](strategyqa_20.xlsx).
 
 The files containing the created prompts are present in the directory [`baseline/baseline_model_prompts`](baseline/baseline_model_prompts). Each file contains 200 prompts corresponding to the 10&times;20 persona-task pairs. 
 
@@ -205,7 +205,7 @@ The average **answer correctness scores** across all persona-task pairs along wi
 
 ### 🎭 Sycophancy Evaluation
 
-The following heatmaps show the **degree of sycophancy exhibited by persona LLMs** for adversarial prompts with weak and strong epistemic markers. Sycophancy is measured from 1 to 5, with 1 indicating least sycophantic and 5 indicating most sycophantic behavior. The heatmap on the left averages the scores across all persona-task pairs, while the one on the right depicts the scores for relevant persona-task pairs.
+The following heatmaps show the **degree of sycophancy exhibited by persona LLMs** for adversarial prompts with weak and strong epistemic markers. Sycophancy is measured from 1 to 5, with 1 indicating least sycophantic and 5 indicating most sycophantic behavior. The first heatmap averages the scores across all persona-task pairs, while the second heatmap depicts the scores for relevant persona-task pairs.
 
 <p align="center">
   <img src="images/sycophancy_chart.png" width="45%" hspace="20">
